@@ -1,0 +1,25 @@
+{
+  "name": "@vovelet/vcore",
+  "version": "0.1.0",
+  "description": "Core logic for Z-score and Let reward calculations",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@vovelet/shared": "0.1.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.3.0",
+    "typescript": "^5.8.2"
+  },
+  "author": "",
+  "license": "MIT"
+}

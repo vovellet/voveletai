@@ -1,0 +1,39 @@
+{
+  "name": "vovelet",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI-powered contribution & evaluation network",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "test": "turbo run test",
+    "test:coverage": "jest --coverage",
+    "blockchain:listen": "ts-node apps/vove-api/scripts/listeners/onChainEvents.ts"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/uuid": "^10.0.0",
+    "dotenv": "^16.4.7",
+    "firebase-admin": "^13.2.0",
+    "firebase-functions-test": "^3.4.1",
+    "jest": "^29.7.0",
+    "prettier": "^3.0.3",
+    "ts-jest": "^29.3.0",
+    "ts-node": "^10.9.2",
+    "turbo": "^1.10.16",
+    "typescript": "^5.8.2",
+    "uuid": "^11.1.0"
+  },
+  "packageManager": "pnpm@8.6.10",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "discord.js": "^14.18.0",
+    "ethers": "^6.13.5"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "@vovelet/vove-api",
+  "version": "0.1.0",
+  "description": "VoveletAI API services",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src/**/*.ts",
+    "clean": "rm -rf dist",
+    "listen": "ts-node scripts/listeners/onChainEvents.ts"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "dependencies": {
+    "@vovelet/shared": "0.1.0",
+    "@vovelet/vcore": "0.1.0",
+    "@vovelet/vove-engine": "0.1.0",
+    "@vovelet/nft-engine": "0.1.0",
+    "ethers": "^6.13.5",
+    "firebase-admin": "^13.2.0",
+    "firebase-functions": "^4.11.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "eslint": "^8.57.0",
+    "firebase-functions-test": "^3.4.1",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.3.0",
+    "typescript": "^5.8.2"
+  },
+  "private": true
+}

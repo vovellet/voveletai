@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "outDir": "dist",
+    "declaration": true,
+    "sourceMap": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*"],
+      "@vovelet/shared": ["packages/shared/src"],
+      "@vovelet/shared/*": ["packages/shared/src/*"],
+      "@vovelet/vcore": ["packages/vcore/src"],
+      "@vovelet/vcore/*": ["packages/vcore/src/*"],
+      "@vovelet/vove-engine": ["packages/vove-engine/src"],
+      "@vovelet/vove-engine/*": ["packages/vove-engine/src/*"],
+      "@vovelet/nft-engine": ["packages/nft-engine/src"],
+      "@vovelet/nft-engine/*": ["packages/nft-engine/src/*"]
+    }
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
